@@ -30,7 +30,7 @@ Results:
 Average value of Jaccard Distance:  0.9804398083185061
 Minimum value of Jaccard Distance:  0.33333333333333337
 
-#### Histogram(X = Jaccard Distance, Y = Number of Pairs)
+##### Histogram(X = Jaccard Distance, Y = Number of Pairs)
 ![histogram_plot 1](https://user-images.githubusercontent.com/41950483/46586956-80650300-ca53-11e8-92fe-564ce7fff38e.png)
 
 
@@ -103,6 +103,9 @@ P = 1 – (1 – (S ^ r1)) ^ b1
 S = similarity > = 0.65
 The values of r1 and b give better results with probability 0.91513
 This can also be viewed in the graph. The specific values of r1 and b1 give a smaller number of false negative as compared to the other values
+##### Plot(X = Similarity, Y = Probability of Hitting)
+![screenshot 84](https://user-images.githubusercontent.com/41950483/46587021-798ac000-ca54-11e8-8d05-bfce386f004d.png)
+
 
 ### Problem 5:
 ##### Statement: Given a new user find the similar user in the dataset
