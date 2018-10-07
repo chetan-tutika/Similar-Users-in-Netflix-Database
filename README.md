@@ -49,8 +49,7 @@ x  =  vector of index value of 1’s in each column
 4.	Repeat the Min Hash process for 100 iterations to obtain a table of Hash values of size [1000, 231424]
 Local Sensitivity Hashing:
 1.	Split the Hash Table into ‘B’ bands each consisting of r1 rows.
-2.	Each band is mapped to a single value according to the function:
-(a1*x + b1) % r1
+2.	Each band is mapped to a single value according to the function: (a1*x + b1) % r1
 a1 = random value in range(0 to (Rows of Padded _Sparse Matrix – 1))
 b1 = random value in range(0 to (Rows of Padded _Sparse Matrix – 1))
 r1 = Huge integer value
@@ -117,8 +116,10 @@ Approach:
 6.	The band values are checked against the users in the data set and if at least one bad match, the new user and the user in that           column of the data set are similar
 7.	Then we determine the Jaccard distance to determine if the distance between them is less than 0.35
 8.	If the distance is less than 0.35 then the new user and the user in the dataset are similar
+
 Results: 
 Input of new user
 user_new_check[0] = 1, user_new_check[189] = 1, user_new_check[455] = 1, user_new_check[466] = 1, user_new_check[561] = 1, user_new_check[690] = 1, user_new_check[1103] = 1, user_new_check[1212] = 1, user_new_check[1896] = 1, user_new_check[3948] = 1, user_new_check[4195] = 1, user_new_check[4375] = 1
+
 Output:
 The closest neighbour is user-id:  124105
