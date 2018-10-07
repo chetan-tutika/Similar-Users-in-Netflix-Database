@@ -19,21 +19,18 @@ Sparse Matrix dimensions: [4485, 231424]
 
 ### Problem 2:
 ##### Statement: To analyze random pairs of 10,000 users and calculate the average Jaccard distance, similarity and plot the histogram of pairwise Jaccard distances
-Approach:
+##### Approach:
 1.	Pad the matrix with zeros to increase the row size to the nearest prime number i:e 4493
 2.	Randomly choose 10,000 pairs from the data set following the discreet uniform distribution
 3.	Calculate the Jaccard distance and similarity of each pair
 4.	Jaccard Distance = 1 – intersection(Pair1, Pair2) / union(Pair1, Pair2)
 5.	Jaccard Similarity = intersection(Pair1, Pair2) / union(Pair1, Pair2)
 6.	Plot the histogram of the values for each pair
-Results:
+###### Results:
 Average value of Jaccard Distance:  0.9804398083185061
 Minimum value of Jaccard Distance:  0.33333333333333337
-
 ##### Histogram(X = Jaccard Distance, Y = Number of Pairs)
 ![histogram_plot 1](https://user-images.githubusercontent.com/41950483/46586956-80650300-ca53-11e8-92fe-564ce7fff38e.png)
-
-
   
 ### Problem 3:
 ##### Statement: Find the nearest neighbor pairs for each queried user
@@ -65,7 +62,6 @@ array([[1, 1, 1, ..., 0, 0, 0],
        [0, 0, 0, ..., 0, 0, 1],
        [0, 0, 0, ..., 0, 0, 0],
        [0, 0, 0, ..., 0, 0, 0]], dtype=int64)
-
 ###### Hash Table Sample
 array([[20,74, 1795, ..., 2577, 2577, 3709],
 [302, 1084, 2618, ..., 4174, 4174, 1830],
@@ -74,7 +70,6 @@ array([[20,74, 1795, ..., 2577, 2577, 3709],
 [ 705,  150, 1742, ..., 4393, 4393, 2300],
 [ 471,   18,   12, ...,  675,  675,  658],
 [  76,   76,   76, ...,  732,  732, 2175]])	
-
 ###### Local Sensitivity Hashing Table Sample
 array([[1236891226, 2854582886, 2192001821, ..., 2254508321, 2254508321,
         1696931309],
@@ -105,7 +100,6 @@ The values of r1 and b give better results with probability 0.91513
 This can also be viewed in the graph. The specific values of r1 and b1 give a smaller number of false negative as compared to the other values
 ##### Plot(X = Similarity, Y = Probability of Hitting)
 ![screenshot 84](https://user-images.githubusercontent.com/41950483/46587021-798ac000-ca54-11e8-8d05-bfce386f004d.png)
-
 
 ### Problem 5:
 ##### Statement: Given a new user find the similar user in the dataset
