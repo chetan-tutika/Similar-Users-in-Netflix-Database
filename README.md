@@ -1,11 +1,10 @@
 # Similar-Users-in-Netflix-Database
-##About the Project:
-
+## About the Project:
 The project aims to find the similar pair of users to in a netfilx dataset
 The data set is named Netflix_data.txt which contains the movie id and ratings each user gave to the particular movie
 For computational feasibilty we discard the users who have rated movies less that 3 and users who have rated more than 20 movies
 
-###Problem 1:
+### Problem 1:
 Statement: Clean the Data according to the given constraints and rearrange the data into ‘M’ movie rows and ‘N’ user columns.
 Approach:
 1.	Drop the unnecessary columns such as date from the data
@@ -18,7 +17,7 @@ Approach:
 Results:
 Sparse Matrix dimensions: [4485, 231424]
 
-###Problem 2:
+### Problem 2:
 Statement: To analyze random pairs of 10,000 users and calculate the average Jaccard distance, similarity and plot the histogram of pairwise Jaccard distances
 Approach:
 1.	Pad the matrix with zeros to increase the row size to the nearest prime number i:e 4493
@@ -32,7 +31,7 @@ Average value of Jaccard Distance:  0.9804398083185061
 Minimum value of Jaccard Distance:  0.33333333333333337
 
   
-###Problem 3:
+### Problem 3:
 Statement: Find the nearest neighbor pairs for each queried user
 Approach: 
 We use the method of Min Hashing and Locality Sensitive Hashing to reduce the computational and spatial limits while computing the nearest neighbors
@@ -89,7 +88,7 @@ array([[1236891226, 2854582886, 2192001821, ..., 2254508321, 2254508321,
        [2602207206, 3754775809, 1423697607, ..., 3121890984, 3121890984,
         2127306639]])   
 
-###Problem 4:
+### Problem 4:
 Statement: To detect the pairs of similar users
 Approach: 
 1.	Each column of the Band matrix is checked with other columns (each user with the rest) and a user is similar if any one of the band values matches at that position.
@@ -103,7 +102,7 @@ S = similarity > = 0.65
 The values of r1 and b give better results with probability 0.91513
 This can also be viewed in the graph. The specific values of r1 and b1 give a smaller number of false negative as compared to the other values
 
-###Problem 5:
+### Problem 5:
 Statement: Given a new user find the similar user in the dataset
 Approach: 
 1.	The new user dataset is assumed to be in the following format of ‘ratings’ of size [4485, 1]
