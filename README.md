@@ -26,7 +26,7 @@ Sparse Matrix dimensions: [4485, 231424]
 4.	Jaccard Distance = 1 – intersection(Pair1, Pair2) / union(Pair1, Pair2)
 5.	Jaccard Similarity = intersection(Pair1, Pair2) / union(Pair1, Pair2)
 6.	Plot the histogram of the values for each pair
-###### Results:
+##### Results:
 Average value of Jaccard Distance:  0.9804398083185061
 Minimum value of Jaccard Distance:  0.33333333333333337
 ##### Histogram(X = Jaccard Distance, Y = Number of Pairs)
